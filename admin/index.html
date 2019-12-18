@@ -55,8 +55,8 @@
         devices.sort(function (dev1, dev2) {
             if (dev1.ip < dev2.ip) return -1;
             if (dev1.ip > dev2.ip) return +1;
-			return 0;
-		});
+	    return 0;
+	});
 
         for (var key in settings) {
             if (settings.hasOwnProperty(key)) setValue(key, settings[key], onChange);
